@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+                font-size: 90px;
+                margin: 20px 0px 0px 20px;
+                font-style: oblique;
+                text-align: left;
+            }
+            body {
+                background-image: url("livros8.jpg") ;
+                background-size: cover;
+                position: absolute;
+                background-attachment:fixed;
+            }
+            input[type = "button"] {
+                border: none;
+                background-color: rgb(243, 214, 188);
+                font-size: 30px;
+                font-style: oblique;
+                border-radius: 50px;
+                padding: 10px;
+                margin: 20px;
+            }
+            input[type = "number"]:hover:not(.ativo), input[type = "button"]:hover:not(.ativo) {
+                background-color: rgb(228, 179, 133);
+                border-radius: 50px;
+            }
+            input[type = "number"] {
+                border: none;
+                background-color: rgb(243, 214, 188);
+                font-size: 20px;
+                border-radius: 50px;
+                padding: 10px;
+                width: 40%;
+                margin: auto;
+            }
+            footer {
+                text-align: left;
+                text-decoration: none;
+                font-size: 20px;
+                clear: both;
+                font-style: oblique;
+                color: white;
+            }
+            form {
+                font-size: 40px;
+                padding: 20px 50px 500px 1000px;
+            }
+        </style>
+        <meta charset="utf-8">
+        <title>Relatório de Livros</title>
+    </head>
+    <body>
+         <header>
+            <h1>Relatório de Livros</h1>
+        </header>
+        <form><br><br>
+            Lista de livros com <br> mais de <input type="number" id="Numero" name="Numero" style="width: 50px;"> autores<br><br>
+            <input type = "button" value = "Buscar"><br><br>
+        </form>
+    </body>
+    <footer>
+        Biblioteca INW - Todos os Direitos Reservados
+    </footer>
+</html>

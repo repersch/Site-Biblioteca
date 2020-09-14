@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+                font-size: 90px;
+                margin: 20px 0px 0px 20px;
+                font-style: oblique;
+                text-align: left;
+            }
+            body {
+                background-image: url("livros8.jpg") ;
+                background-size: cover;
+                position: absolute;
+                background-attachment:fixed;
+            }
+            form {
+                font-size: 40px;
+                padding: 20px 50px 500px 900px;
+            }
+            footer {
+                text-align: left;
+                text-decoration: none;
+                font-size: 20px;
+                clear: both;
+                font-style: oblique;
+                color: white;
+            }
+            input[type = "button"] {
+                border: none;
+                background-color: rgb(243, 214, 188);
+                font-size: large;
+                font-style: oblique;
+                border-radius: 50px;
+                padding: 10px;
+                width: 25%;
+                
+                
+                
+            }
+            input[type = "button"]:hover:not(.ativo), input[type = "text"]:hover:not(.ativo), input[type = "number"]:hover:not(.ativo), 
+            input[type = "isbn"]:hover:not(.ativo), input[type = "tel"]:hover:not(.ativo), input[type = "email"]:hover:not(.ativo), 
+            input[type = "cpf"]:hover:not(.ativo), input[type = "date"]:hover:not(.ativo), input[type = "CEP"]:hover:not(.ativo) {
+                background-color: rgb(228, 179, 133);
+                border-radius: 50px;
+            }
+            input[type = "text"], input[type = "number"], input[type = "isbn"], input[type = "tel"], input[type = "email"], 
+            input[type = "cpf"], input[type = "date"], input[type = "CEP"], select {
+                border: none;
+                background-color: rgb(243, 214, 188);
+                font-size: 20px;
+                border-radius: 50px;
+                padding: 10px;
+                width: 50%;
+            }
+            label {
+                font-size: 40px;
+                font-style: oblique;
+                text-align: right;
+            }
+            
+        </style>
+        <meta charset="utf-8">
+        <title>Opções de Usuários</title>
+    </head>
+    <body>
+        <header>
+        <h1>Opções de Usuários</h1>
+        </header><br><br>
+        <div>
+            <form>
+                <label for="Nome">Nome:</label>
+                <input type="text" id="Nome" name="Nome"><br>
+                <label for="CPF">CPF:</label>
+                <input type="cpf"name="CPF" style="width: 170px;" placeholder= "XXX.XXX.XXX-XX" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required><br>
+                <label for="Rua">Rua:</label>
+                <input type="text" id="Rua" name="Rua">
+                <label for="Numero">Nº:</label>
+                <input type="number" id="Numero" name="Numero" style="width: 50px">
+                <label for="CEP">CEP:</label>
+                <input type="CEP" id="CEP" name="CEP" style="width: 130px;" placeholder="XXXXX-XXX" pattern="[0-9]{5}-[0-9]{3}" required><br>
+                <label for="E-mails">E-mail:</label>
+                <input type="email" id="E-mails" name="E-mails"><br>
+                <label for="telefone">Telefone:</label>        
+                <input type="tel" id="telefone" name="telefone"  style="width: 170px" placeholder="(99)99999-9999" pattern="([0-9]{2})[0-9] {5}-[0-9]{4}" required><br>
+                <label for="nascimento">Data de nascimento: </label>
+                <input type="date" id="nascimento" name="nascimento" min="1900-01-01" max="2020-01-01"><br>
+                <label for="Profissão">Profissão:</label>
+                <input type="text" id="Profissão" name="Profissão"><br><br>
+                <section id = "opções">
+                    <input type = "button" value = "Incluir"> 
+                    <input type = "button" value = "Editar" > 
+                    <input type = "button" value = "Excluir"> 
+                </section>
+            </form>
+        </div>
+    </body>
+    <footer>
+        <p>Biblioteca INW - Todos os Direitos Reservados</p>
+     </footer>
+</html>
